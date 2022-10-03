@@ -1,5 +1,5 @@
-#define STRIP_PIN 7     // пин ленты
-#define NUMLEDS 99      // кол-во светодиодов
+#define STRIP_PIN 7     
+#define NUMLEDS 99     
 
 #define COLOR_DEBTH 3
 #include <microLED.h>   
@@ -37,7 +37,7 @@ void loop() {
 
   // вывод
   //breathing();    // "дыхание" яркости, применяется ко всем эффектам
-  //strip.show();   // вывод
+  //strip.show();   
   //delay(30);      // 30 кадров в секунду
 }
 
@@ -84,7 +84,7 @@ void runningDots() {
   if (counter % 3 == 0) strip.leds[NUMLEDS - 1] = mRed;
   else strip.leds[NUMLEDS - 1] = mBlack;
   counter++;
-  delay(100);   // дополнительная задержка
+  delay(100);   
 }
 
 void breathing() {
